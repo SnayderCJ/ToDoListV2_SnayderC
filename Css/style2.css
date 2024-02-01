@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,800;1,100&display=swap");
+
+* {
+  /* font-family: 'Lilita One', cursive; */
+  /* font-family: 'Work Sans', sans-serif; */
+  font-family: "Righteous", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* h2{
+  font-style: italic;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: transform 0.1s ease-in-out;
+}
+
+.contenedor-encabezado {
+  background-color: #0f0f0f;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.contenedor-encabezado header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.contenedor-encabezado header .titulo a {
+  font-size: "Righteous";
+  font-size: 36px;
+  color: #005b41;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: #1bce9b 2px 1px;
+}
+
+.contenedor-encabezado header .titulo i {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.contenedor-encabezado header .titulo a:hover {
+  color: transparent;
+}
+.contenedor-encabezado header .titulo i:hover {
+  color: transparent;
+}
+
+/* LISTA DE TAREAS */
+
+.lista-de-tareas {
+  /* width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      135deg,
+      rgb(121, 13, 145) 0%,
+      rgb(15, 65, 182) 100%
+    );
+    background-size: cover;
+  padding: 10px; */
+  background: url(../Images/gif3.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.lista-de-tareas2{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lista {
+  width: 100%;
+  max-width: 540px;
+  background: #0000008c;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.lista h2 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.lista h2 img {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000008c;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+  color: #fff;
+  font-style: italic;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #1bce9b67;
+  color: #0000008c;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-style: italic;
+}
+
+button:hover{
+   background: #1bce9b97;
+}
+
+.lista2 {
+  width: 100%;
+  max-width: 540px;
+  background: #0000008c;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.lista2 h2 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.lista2 h2 img {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.lista3 {
+  width: 100%;
+  max-width: 540px;
+  background: #0000008c;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.lista3 h2 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.lista3 h2 img {
+  width: 80px;
+  margin-left: 10px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  /* padding: 12px 8px 12px 50px; */
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  font-style: italic;
+}
+
+ul li::before{
+ content: '';
+ position: absolute;
+ height: 28px;
+ width: 28px;
+ border-radius: 50%;
+ background-size: cover;
+ background-position: center;
+ top: 12px;
+ left: 8px;
+ font-style: italic;
+}
+
+ul li.listo{
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.listo::before{
+  background-image: url(../Images/cheked2.png);
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: red;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+  background: #0000008c;
+}
+
+
+/* #lista-pendientes button{
+  border: none;
+  margin: 5px;
+  outline: none;
+  padding: 1px 16px;
+  background: #1bce9b;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+#lista-pendientes button:hover{
+  background-color: green;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+#lista-completadas button{
+  border: none;
+  margin: 5px;
+  outline: none;
+  padding: 1px 16px;
+  background: #1bce9b;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+#lista-completadas button:hover{
+ background-color: red;
+ transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+} */
+
+li {
+  align-items: center;
+  justify-content: center;
+  background-color: #000000b1;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin: 10px;
+}
+
+.lista2 ul li{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 100%; 
+  padding: 10px 10px 5px 15px;
+}
+
+.lista3 ul li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 100%; 
+  padding: 10px 10px 5px 40px;
+}
+
+.lista2 ul li button,
+.lista3 ul li button {
+  float: right;
+  margin-left: 10px; 
+}
+
+/* TODO BIEN */
+
+.button-listo {
+  background-color: green;
+  color: white;
+
+  margin: 5px;
+  padding: 5px 20px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+.button-eliminar {
+  background-color: red;
+  color: white;
+  margin: 5px;
+  padding: 5px 20px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+.button-listo:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.button-eliminar:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* FOOTER */
+
+footer{
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}

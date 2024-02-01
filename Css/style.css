@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,800;1,100&display=swap");
+
+* {
+  /* font-family: 'Lilita One', cursive; */
+  /* font-family: 'Work Sans', sans-serif; */
+  font-family: "Righteous", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: transform 0.1s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fondo{
+  /* background: linear-gradient(
+      135deg,
+      rgb(121, 13, 145) 0%,
+      rgba(15, 65, 182, 0.594) 100%
+    ),
+    url(../Images/fondo1.jpg);
+    background-size: cover; */
+    background: url(../Images/gif5.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Navegacion */
+
+.contenedor-encabezado {
+  background-color: #0f0f0f;
+  box-shadow: #0f0f0f 1px 2px 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.contenedor-encabezado header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.contenedor-encabezado header .bienvenida a {
+  font-size: "Righteous";
+  font-size: 36px;
+  color: #005b41;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: #1bce9b 2px 1px;
+}
+
+.contenedor-encabezado header .bienvenida img {
+  width: 36px;
+  margin-left: 10px;
+}
+
+.contenedor-encabezado header .bienvenida a span:hover {
+  color: transparent;
+  margin-left: 10px;
+}
+
+.contenedor-encabezado header .bienvenida a span {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+/* INICIO */
+
+.inicio {
+  background-size: cover;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inicio .contenido-lista h2 {
+  font-size: 40px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.inicio .contenido-lista img {
+  height: 40px;
+  margin-left: 1px;
+}
+
+.inicio .contenido-lista p {
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio .contenido-lista .ingresar {
+  font-size: 25px;
+  color: green;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes cambioColor{
+  0%{
+    color: rgb(255, 0, 0);
+  }
+
+  50%{
+    color: rgb(0, 255, 0);
+  }
+
+  100%{
+    color: rgb(0, 0, 255);
+  }
+}
+
+.inicio .contenido-lista .ingresar {
+  animation: cambioColor 4s infinite;
+}
+
+
+
+.inicio .contenido-lista .p1 i {
+  font-size: 20px;
+  color: orange;
+  margin-right: 10px;
+}
+
+.inicio .contenido-lista .p2 i {
+  font-size: 20px;
+  color: green;
+  margin-right: 10px;
+}
+
+
+
+.contenido-lista {
+  background: linear-gradient(
+    135deg,
+    rgb(9, 103, 116) 0%,
+    rgba(63, 13, 214, 0.999) 100%
+  );
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.contenido-lista:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+
+/* FOOTER */
+
+footer{
+  font-size: 16px;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+
+

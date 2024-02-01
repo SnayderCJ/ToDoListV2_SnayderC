@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../Css/style2.css" />
+    <title>Lista de Tareas</title>
+  </head>
+  <body>
+    <!-- NAVEGACION -->
+    <div class="contenedor-encabezado">
+      <header>
+        <div class="titulo">
+          <a href="/index.html">
+            <i class="fa-solid fa-house"></i> Inicio 
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <!-- LISTA DE TAREAS -->
+    <main>
+      <section class="lista-de-tareas">
+        <div class="lista">
+          <h2>
+            Lista de Tarea
+            <img src="/Images/undraw_to_do_list_re_9nt7.svg" alt="" />
+          </h2>
+          <div class="text">
+            <input type="text" id="entrada" placeholder="Ingrese un texto" />
+            <button onclick="agregarTarea()">Agregar</button>
+          </div>
+        </div>
+
+        <div class="lista-de-tareas2">
+          <div class="lista2">
+            <h2>
+              Tareas Pendientes
+              <img src="/Images/undraw_notify_re_65on.svg" alt="" />
+            </h2>
+            <ul id="lista-pendientes">
+
+            </ul>
+          </div>
+
+          <div class="lista3">
+            <h2>
+              Tareas Completadas
+              <img src="/Images/undraw_checklist__re_2w7v.svg" alt="" />
+            </h2>
+            <ul id="lista-completadas">
+ 
+            </ul>
+          </div>
+        </div>
+        <footer> Todos los derechos reservados © - Cedeño Snayder. </footer>
+      </section>
+    </main>
+
+    <script src="../JavaScript/logica.js"></script>
+
+  </body>
+</html>
